@@ -6,6 +6,8 @@
 Download files from this repository.
 Open your command line and type `npm i` to install all necesarry node-modules.
 
+Inside of the .env file you'll find a variable named TOKEN. Fill in your discord bot token here.
+
 Adding command can be done trough creating a new file inside of the commands folder!
 
 Repositories used: 
