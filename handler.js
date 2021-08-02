@@ -17,7 +17,7 @@ module.exports.handler = (client, message) => {
     if(message.channel.type === 'dm') {
         if(command.onlyGuild) return  message.reply('This is a guild only command!');
         if(command.permission) return  message.reply('This command requires guild specific permissions\n Guild:' + message.guild);
-        if(command.channel) return  message.reply('This is command is bound to a specific channel');
+        if(command.channel) return  message.reply('This command is bound to a specific channel');
     }
     if(command.permission && !message.member.hasPermission(command.permission)) return message.reply('Insufficient permissions!');
     if(command.channel && message.channel.id != command.channel) return message.reply(`This command can only be used in <#${command.channel}>`)
